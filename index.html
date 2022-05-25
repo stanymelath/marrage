@@ -1,0 +1,678 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+<title>AgarwalShadi.com</title>
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/14537/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+<style>
+.bg_signup { background: linear-gradient(to right, yellow, #FAA6C8); position: relative; width: 100%; height: 140px; padding: 70px 0; }
+.bg_signup_b2b { background: linear-gradient(to right, yellow, #FAA6C8); background-size: cover; position: relative; width: 100%; height: 100%; padding: 70px 0; }
+*, *:before, *:after { box-sizing: border-box; }
+body { padding: 0; font-family: 'Rubik', Helvetica, Arial, sans-serif; font-size: 15px; color:navy; background-color: #F6CA97; margin: 0; }
+h4, h5 { color:navy; margin: 15px 0; font-weight: 400; font-size: 18px; }
+h4:after, h5:after { background-color: #e4e4e4; content: ""; display: inline-block; height: 1px; position: relative; vertical-align: middle; width: 83%; }
+h5:after { width: 77%; }
+h4:before, h5:before { right: 0.5em; margin-left: -50%; }
+h4:after, h5:after { left: 0.5em; margin-right: -50%; }
+.input_bx { width: 100%; padding: 12px 1em; line-height: 1.4; background-color: #fff; border: 1px solid #ccc; -webkit-transition: 0.35s ease-in-out; -moz-transition: 0.35s ease-in-out; -o-transition: 0.35s ease-in-out; transition: 0.35s ease-in-out; transition: all 0.35s ease-in-out; font-family: 'Rubik'; font-size: 15px; -webkit-box-shadow: 0 2px 2px 0 #cdcdcd; -moz-box-shadow: 0 2px 2px 0 #cdcdcd; -ms-box-shadow: 0 2px 2px 0 #cdcdcd; box-shadow: 0 2px 2px 0 #cdcdcd; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; font-weight: 300 }
+input:focus, textarea:focus { outline: 0; border-color: green; }
+.input-group { margin-bottom: 1em; zoom: 1; }
+.input-group:before, .input-group:after { content: ""; display: table; }
+.input-group:after { clear: both; }
+.container { width: 70%; padding: 25px; margin: 0em auto; background-color: #f7f7f7; border-radius: 4px; border: 1px solid #cbcbcb; -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5); -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5); -ms-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5); box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5); }
+.row { zoom: 1; }
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+.col_2 { width: 48.3%; float: left; position: relative }
+.col_3 { width: 32%; float: left; position: relative }
+.col_4 { width: 22.6%; float: left; position: relative }
+.col_4_1 { width: 22.7%; float: left; position: relative }
+.col_2_1 { width: 74%; float: left; position: relative }
+.col_6 { width: 14%; float: left; position: relative }
+.col_7 { width: 17%; float: left; position: relative }
+.col_12 { width: 99.7%; float: left; position: relative }
+.mgr30 { margin-right: 30px }
+.mgr14 { margin-right: 3% }
+.search_categories { font-size: 13px; padding: 14px 8px 14px 6px; background: #fff; border: 1px solid #f5f5f5; overflow: hidden; position: relative; webkit-box-shadow: 0 2px 2px 0 #cdcdcd; -moz-box-shadow: 0 2px 2px 0 #cdcdcd; -ms-box-shadow: 0 2px 2px 0 #cdcdcd; box-shadow: 0 2px 2px 0 #cdcdcd; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; }
+.search_categories .select { width: 120%; }
+.search_categories .select::after { content: ''; padding: 0; position: absolute; right: 0; top: 0; z-index: 1; text-align: center; width: 15%; height: 100%; pointer-events: none; background: #fff url(arrow-down.png) no-repeat; background-size: 12px 6px; background-position: 50% center; }
+.search_categories .select select { background: transparent; line-height: 1; border: 0; padding: 0; border-radius: 0; width: 120%; position: relative; z-index: 10; font-size: 1em; outline: none; font-family: 'Rubik'; font-size: 15px; font-weight: 300; }
+.check-box { color: #333; display: block; position: relative; padding-left: 25px; margin-bottom: 12px; cursor: pointer; font-size: 14px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.check-box input { position: absolute; opacity: 0; }
+.checkmark { position: absolute; top: 0; left: 0; height: 19px; width: 19px; background-color: #d8d8d8; border-radius: 2px; }
+.check-box:hover input ~ .checkmark { background-color: #ccc; }
+.check-box input:checked ~ .checkmark { background-color: #BA68C8; }
+.checkmark:after { content: ""; position: absolute; display: none; }
+.check-box input:checked ~ .checkmark:after { display: block; }
+.check-box .checkmark:after { left: 7px; top: 2px; width: 6px; height: 12px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.lb-fl { width: 100%; margin: 5% 0; padding: 0px; float: left; }
+.btn-sbmt { cursor: pointer; background: #f8af6c; padding: 13px 8px; text-align: center; border-radius: 3px; margin: 15px auto; color: #fff; outline: 0; border: 0; width: 40%; font-size: 19px; font-family: 'Rubik'; text-transform: uppercase;-moz-appearance: none;-webkit-appearance: none; }
+.t-center { text-align: center }
+.clear { clear: both }
+.from_ttl { position: absolute; top: 13px; text-align: center; width: 100%; font-size: 32px; font-weight: 600; color: #fff; letter-spacing: 1px; }
+.v_midle { vertical-align: middle }
+.star { color: red }
+.palceholder { position: absolute; top: 14px; left: 12px; color: #333; display: none; font-size: 14px; font-family: 'Rubik'; font-weight: 300 }
+.r_none { resize: none }
+.error { color: #ea2330; margin: 5px 0 0 0; font-size: 13px; display: none; font-family: 'Rubik'; font-weight: 300 }
+.cont_flt2 { display: block; position: relative; padding-left: 31px; margin: 2px 4px 16px 0; cursor: pointer; font-size: 15px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;color:#333 }
+.cont_flt2 input { position: absolute; opacity: 0; cursor: pointer; }
+.chk_flt { position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #fff; border-radius: 50%; border: 1px solid #00a3d6; }
+.cont_flt2:hover input ~ .chk_flt { background-color: #ccc; }
+.cont_flt2 input:checked ~ .chk_flt { background-color: #fff; }
+.chk_flt:after { content: ""; position: absolute; display: none; }
+.cont_flt2 input:checked ~ .chk_flt:after { display: block; }
+.cont_flt2 .chk_flt:after { top: 4px; left: 4px; width: 10px; height: 10px; border-radius: 50%; background: #bedb39; }
+label { display: inline-block; max-width: 100%;margin-bottom: 5px;font-weight: 400; color: #000;
+}
+ .col_7_2{width: 31%;float: left; position: relative;}
+@media only screen and (max-width: 960px) {
+.col_2, .col_3, .col_4, .col_4_1, .col_2_1 , .col_7_2{ width: 100%; }
+.col_6 { width: 33% }
+.container { width: 90% }
+h4:after { width: 40%; }
+h5:after { width: 27%; }
+}
+</style>
+</head>
+
+<body>
+<div class="bg_signup_b2b">
+<div class="from_ttl">Bio Data</div>
+<div class="container">
+
+<div class="clear"></div>
+<form action="biodata2.html" id="myForm">
+    <div class="row">
+    <h4>Personal Profile</h4>
+      <div class="input-group col_2 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="0.5s" required />
+				<label for="name">Full Name</label><span style="color:red;">*</span>
+		<input type="text" class="input_bx"  id="txt" name="full name" placeholder="Enter first name-middle name-last/surname" required />
+      </div>
+	        <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Height (in cm) & Weight (in kg)</label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt5" name="Height" placeholder="Enter Height, weight" required />
+      </div>
+      <div class="input-group col_4_1 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Complexion</label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt6" name="Complexion" placeholder="Enter Complexion" required />
+      </div>
+      <div class="input-group col_4_1 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Gender</label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt24" name="Gender" placeholder="Enter Gender" required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-group col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Birth Date & Time </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt2" name="BirthDate" placeholder="eg.DD/MM/YY-HH/MM/SS" required />
+      </div>
+
+
+
+      <div class="input-group col_7_2 mgr14  revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Birth Place</label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt4" name="BirthPlace" placeholder="Enter City Name" required />
+      </div>
+
+      <div class="input-group col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Gotra </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt7" name="Gotra" placeholder="Enter Gotra" required />
+      </div>
+	  	</div>
+      <div class="row">
+		<div class="input-group col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Manglik</label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt8" name="Manglik" placeholder="Enter Yes / No " required />
+      </div>
+      <div class="input-group col_7_2  revealOnScroll" data-animation="fadeInUp">
+        <label for="name">Marital status </label><span style="color:red;">*</span>
+    <input type="text" class="input_bx"   id="txt17" name="Marital status" placeholder="Marital status" required />
+  </div>
+</div>
+  <div class="row">
+  <h4>Education/Work Details</h4>
+	        <div class="input-group col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Education </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"   id="txt9" name="Education" placeholder="Enter Education Details " required />
+      </div>
+      <div class="input-group col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Occupation </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"   id="txt10" name="Occupation" placeholder="Enter occupation " required />
+      </div>
+<!--- check box
+      <div class=" col_4_1 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+	        <div style="    margin-bottom: 10px;">      <label for="name">Manglik</label><span class="star">*</span></div>
+    <div class="col_7_2 revealOnScroll" data-animation="fadeInUp">
+	<label class="cont_flt2">Yes<input type="radio" checked="checked" name="radio"><span class="chk_flt"></span></label>
+	</div>
+    <div class="col_7_2 revealOnScroll" data-animation="fadeInUp">
+	<label class="cont_flt2">No<input type="radio" checked="checked" name="radio"><span class="chk_flt"></span></label>
+	</div>
+</div>	 -->
+
+
+
+    <div class="input-group col_7_2 revealOnScroll animated fadeInUp" data-animation="fadeInUp">
+            <label for="name">Income </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx r_none" id="txt_30" name="Income" placeholder="Enter income" required />
+      </div>
+      <div class="input-group col_7_2 revealOnScroll animated fadeInUp" data-animation="fadeInUp">
+              <label for="name">Work Place Address </label><span style="color:red;">*</span>
+          <input type="text" class="input_bx r_none" id="txt30" name="Work Place Address" placeholder="Work Place Address" required />
+        </div>
+    </div>
+<!--uplode image-->
+	<div class="row">
+       <div class="input-group  col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Uplode Image 1</label><span style="color:red;">*</span>
+        <input  type="file" id="img1" class="input_bx" placeholder="Uplode Image " name="pic" accept="image/*" >
+      </div>
+       <div class="input-group col_7_2 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Uplode Image 2</label>
+        <input  type="file"  id="img2" class="input_bx" placeholder="Uplode Image " name="pic2" accept="image/*" >
+      </div>
+    <!--   <div class="input-group col_7_2  revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Uplode Image 3</label>
+        <input  type="file"  id="img3" class="input_bx" placeholder="Uplode Image " name="pic3" accept="image/*" >
+      </div>  -->
+	</div>
+
+    <div class="row">
+    <h4>Family Details</h4>
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">GrandFather name & native place</label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"   id="txt11" name="GrandFather name & native place" placeholder="Enter Name , native place "required />
+      </div>
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">GrandMother name </label>
+        <input type="text" class="input_bx"  id="txt12" name="GrandMother name" placeholder="Enter Name ">
+      </div>
+
+	</div>
+	    <div class="row">
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Father Name & occupation </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt13" name="Father" placeholder="Enter Name,occupation" required/>
+      </div>
+
+
+
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name"> Father Mobile no</label><span style="color:red;">*</span>
+        <input type="number" class="input_bx"  id="txt14" name="Father mobile no" placeholder="Enter mobile number" required/>
+      </div>
+		</div>
+ <div class="row">
+		      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Mother Name & occupation </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt15" name="Mother"  placeholder="Enter Name,occupation " required/>
+      </div>
+
+
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Mother Mobile no  </label>
+        <input type="number" class="input_bx"  id="txt16" name="Mother mobile no" placeholder="Enter mobile number ">
+      </div>
+		</div>
+
+
+
+ <!--     <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Uncle  & Occupation</label>
+        <input type="text" class="input_bx"  id="txt17" placeholder="Enter Name ">
+      </div>
+      <div class="input-group col_4_1 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Aunt  & Occupation</label>
+        <input type="text" class="input_bx"  id="txt18" placeholder="Enter Name ">
+      </div>-->
+	    <div class="row">
+
+
+</div>
+<div class="input-group col_2 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+	  <label for="name">No. of brothers</label>
+		<select name="no of brothers" id="txt500">
+		 <option value="volvo">0</option><br>
+	 <option value="volvo">1</option>
+	 <option value="saab">2</option>
+	 <option value="opel">3</option>
+	 <option value="audi">4</option>
+
+ </select>
+ <br><br>
+
+      <div class="input-group col_12 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+				<label for="name">Brothers name and occupation {you can add multiple name with each seperated by coma} </label>
+		<input type="text" class="input_bx"  id="txt28" name="Brother details" placeholder="eg: brother name and occupation">
+	</div>
+
+
+      <div class="input-group col_12 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Brothers Details</label>
+        <input type="text" class="input_bx"  id="txt29" name="Brother details" placeholder="eg: brother name-married/unmarried etc ">
+      </div>
+			<div class="input-group col_2 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+				  <label for="name">No. of sisters</label>
+					<select name="no of brothers" id="txt501">
+					 <option value="volvo">0</option><br>
+				 <option value="volvo">1</option>
+				 <option value="saab">2</option>
+				 <option value="opel">3</option>
+				 <option value="audi">4</option>
+
+			 </select>
+			 <br><br></div>
+      <div class="input-group col_12 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Sisters Name and Occupation  {you can add mltiple name with each seperated by coma}<span style="font-size: 10px;">
+        <input type="text" class="input_bx"  id="txt301" name="Sisters" placeholder="enter sisters name & occupation ">
+      </div>
+
+      <div class="input-group col_12 mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Sisters Details<span style="font-size: 10px;"><span></label>
+        <input type="text" class="input_bx"  id="txt31" name="Sister details" placeholder="eg. sister name-married/unmarried etc ">
+      </div>
+      </div>
+      <div class="row">
+              <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Nana ji name & native place <span style="font-size: 10px;"><span> </label><span style="color:red;">*</span>
+        <input type="text" class="input_bx"  id="txt19" name="NANAJI NAME" placeholder="Enter Name,native place " required/>
+      </div>
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Mama ji name <span style="font-size: 10px;"><span></label>
+        <input type="text" class="input_bx"   id="txt20" name="MAMAJI NAME" placeholder="Enter Name ">
+      </div>
+
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Taya ji name <span style="font-size: 10px;"></span> </label>
+        <input type="text" class="input_bx"  id="txt50" name="TAYAJI NAME" placeholder="Enter Name">
+      </div>
+      <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Chacha ji name <span style="font-size: 10px;"></span></label>
+        <input type="text" class="input_bx"   id="txt51" name="CHACHAJI NAME"placeholder="Enter Name ">
+      </div>
+	</div>
+
+ <!--   <div class="row">
+      <div class="input-group col_7_2  mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Add Relationship</label>
+        <input type="text" class="input_bx"  id="txt28" placeholder="Enter Occupation ">
+      </div>
+      <div class="input-group col_7_2  mgr14 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Add Name</label>
+        <input type="text" class="input_bx"  id="txt29" placeholder="Enter Occupation ">
+      </div>
+      <div class="input-group col_7_2 revealOnScroll" data-animation="fadeInUp" data-wow-delay="1s">
+            <label for="name">Add Occupation</label>
+        <input type="text" class="input_bx"  id="txt30" placeholder="Enter Occupation ">
+      </div>
+	</div>	-->
+
+
+
+
+
+	    <div class="row">
+    <h4> Contact Details</h4>
+    <div class="input-group col_12 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Address</label><span style="color:red;">*</span required />
+        <input type="text"class="input_bx r_none"  id="txt21" name="Address" placeholder="Enter full Address "required/>
+      </div>
+    <!--   <div class="input-group col_4_1 mgr14 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Mobile No </label>
+        <input type="text" class="input_bx r_none"   id="txt22" name="MobileNumber" placeholder="Enter Mobile No "/>
+      </div>-->
+
+       <div class="input-group col_2 revealOnScroll" data-animation="fadeInUp">
+            <label for="name">Email Id</label>
+        <input type="email"class="input_bx r_none"  id="txt23" name="Email" placeholder="Enter Email ">
+      </div>
+	</div>
+  <div class="row">
+<h4>Requirements</h4>
+<div class="input-group col_12 revealOnScroll" data-animation="fadeInUp">
+        <label for="name">Requirement for bride/groom<span style="color:red;">*</span></label required />
+    <input type="text"class="input_bx r_none"  id="txt18" name="REQ" placeholder="your requirement " required />
+  </div>
+</div>
+
+
+    <div class="col_12 t-center"><input type="button" class="btn-sbmt" value="Submit "  onclick='SubForm()';/> <a href="biodata2.html" type="next" onClick="passvalues()"></a></div>
+    <a href="biodata2.html" type="next" onClick="passvalues()">NEXT(click next to preview the form)</a>
+
+
+
+    <div class="clear"></div>
+
+  </form>
+</div>
+</div>
+
+<script>
+   function passvalues()
+   {
+      debugger;
+	   var name=document.getElementById("txt").value;
+	   localStorage.setItem("textvalue", name);
+
+	   var dob=document.getElementById("txt2").value;
+	   localStorage.setItem("textvalue2", dob);
+
+	   var City=document.getElementById("txt4").value;
+	   localStorage.setItem("textvalue4", City);
+
+	   var Height=document.getElementById("txt5").value;
+	   localStorage.setItem("textvalue5", Height);
+
+	   var Complex= document.getElementById("txt6").value;
+	   localStorage.setItem("textvalue6", Complex);
+
+     var Gender= document.getElementById("txt24").value;
+     localStorage.setItem("textvalue24", Gender);
+
+	   var gotra=document.getElementById("txt7").value;
+	   localStorage.setItem("textvalue7", gotra);
+
+	   var ismangal=document.getElementById("txt8").value;
+	   localStorage.setItem("textvalue8", ismangal);
+
+     var marital=document.getElementById("txt17").value;
+     localStorage.setItem("textvalue17", marital);
+
+	   var Edu= document.getElementById("txt9").value;
+	   localStorage.setItem("textvalue9", Edu);
+
+	   var occup=document.getElementById("txt10").value;
+	   localStorage.setItem("textvalue10", occup);
+
+	   var gf=document.getElementById("txt11").value;
+	   localStorage.setItem("textvalue11",gf);
+
+	   var gm=document.getElementById("txt12").value;
+	   localStorage.setItem("textvalue12",gm);
+
+	   var fatname=document.getElementById("txt13").value;
+	   localStorage.setItem("textvalue13", fatname);
+
+	   var Fmob=document.getElementById("txt14").value;
+	   localStorage.setItem("textvalue14", Fmob);
+
+	   var mname=document.getElementById("txt15").value;
+	   localStorage.setItem("textvalue15", mname);
+
+	   var Mmob=document.getElementById("txt16").value;
+	   localStorage.setItem("textvalue16", Mmob);
+
+     var broname=document.getElementById("txt28").value;
+     localStorage.setItem("textvalue28", broname);
+
+     var Bdetail=document.getElementById("txt29").value;
+     localStorage.setItem("textvalue29", Bdetail);
+
+     var sisname=document.getElementById("txt301").value;
+     localStorage.setItem("textvalue301", sisname);
+
+     var Sdetail=document.getElementById("txt31").value;
+     localStorage.setItem("textvalue31", Sdetail);
+
+	   var naname=document.getElementById("txt19").value;
+	   localStorage.setItem("textvalue19", naname);
+
+	   var mama=document.getElementById("txt20").value;
+	   localStorage.setItem("textvalue20", mama);
+
+
+	   var add=document
+     .getElementById("txt21").value;
+	   localStorage.setItem("textvalue21", add);
+
+	   var taya=document.getElementById("txt50").value;
+	   localStorage.setItem("textvalue50",taya);
+
+	   var chacha=document.getElementById("txt51").value;
+	   localStorage.setItem("textvalue51",chacha);
+
+	   var email=document.getElementById("txt23").value;
+	   localStorage.setItem("textvalue23",email);
+
+
+     var req=document.getElementById("txt18").value;
+     localStorage.setItem("textvalue18", req);
+
+	   var inc=document.getElementById("txt_30").value;
+	   localStorage.setItem("textvalue_30",inc);
+
+     var Workadd=document.getElementById("txt30").value;
+	   localStorage.setItem("textvalue30",Workadd);
+	   var img1 = "";
+	   var img2 = "";
+
+
+	    var file = document.querySelector("input[name='pic']").files[0]; //sames as here
+
+			  var reader = new FileReader();
+
+			  reader.onloadend = function () {
+				  var imgur = reader.result;
+				  localStorage.setItem('perImg1', imgur);
+				   img1 = imgur;
+			  }
+
+			  if (file) {
+				  reader.readAsDataURL(file);  //reads the data as a URL
+			  }
+
+
+
+			  var file2 = document.querySelector("input[name='pic2']").files[0];
+
+			  var reader1 = new FileReader();
+
+			  reader1.onloadend = function () {
+				  var imgur = reader1.result;
+				  localStorage.setItem('perImg2', imgur);
+				  img2 = imgur;
+				 }
+			  if (file2)
+			  reader1.readAsDataURL(file2);
+
+
+			  //var file3 = document.querySelector("input[name='pic3']").files[0];
+			  //var reader2 = new FileReader();
+
+			  //reader2.onloadend = function () {
+			  //    var imgur = reader2.result;
+			  //    localStorage.setItem('perImg3', imgur);
+
+			  //}
+			  //if (file3)
+			  //reader2.readAsDataURL(file3);
+
+
+			  var req = {
+			      Name: name,
+			      Dob: dob,
+			      City: City,
+			      Height: Height,
+			      Complex: Complex,
+            Gender: Gender,
+			      Gotra: gotra,
+			      Mangal: ismangal,
+            Marital: marital,
+			      Education: Edu,
+			      Occupation: occup,
+			      Granddad: gf,
+			      Grandmom: gm,
+			      father: fatname,
+						Fathermob: Fmob,
+			      Mother: mname,
+						Mothermob: Mmob,
+			      Brother: broname,
+						Brotherdetail: Bdetail,
+			      Sister: sisname,
+            Sisterdetail: Sdetail,
+			      Nani: naname,
+			      Mama: mama,
+			      Address: add,
+            Taya: taya,
+			      Chacha: chacha,
+			      Email: email,
+			      Requirements: req,
+			      Income: inc,
+            Workaddress: Workadd,
+			      Image1: img1,
+                  Image2:img2
+			  };
+
+			  $.ajax({
+			      type: "Post",
+			      contentType: "application/json; charset=utf-8",
+
+			      dataType: "json",
+			      url: "http://www.AgrawalShadi.com.com/biodata2.html",// cloud.easemytrip.in/emtservice
+			      data: JSON.stringify(req),
+			      async: false,
+			      success: function (response) {
+				  document.getElementById("form1").submit();
+
+
+			         // location.href = "http://www.easybandhan.com/view.html";
+
+			      },
+			      error: function (response) {
+			      }
+
+			  });
+			  // return false;
+
+
+
+
+
+
+	}
+
+
+
+
+</script>
+
+
+<script language="JavaScript" >
+<!--
+
+
+
+
+$(document).ready(function() {
+debugger;
+    localStorage.setItem('perImg1', "");
+	 localStorage.setItem('perImg2', "");
+	  localStorage.setItem('perImg', "");
+	  localStorage.setItem('perImg3', "");
+	  localStorage.removeItem("perImg1");
+	  localStorage.removeItem("perImg2");
+	   localStorage.removeItem('perImg');
+});
+//-->
+</script>
+
+
+
+<script>
+$(function() {
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+   $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn bounceInUp rollIn bounceInRight')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
+</script>
+<script>
+$('.palceholder').click(function() {
+  $(this).siblings('input').focus();
+  $(this).siblings('textarea').focus();
+});
+$('.input_bx').focus(function() {
+  $(this).siblings('.palceholder').hide();
+});
+$('.input_bx').blur(function() {
+  var $this = $(this);
+  if ($this.val().length == 0)
+    $(this).siblings('.palceholder').show();
+});
+$('.input_bx').blur();
+</script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

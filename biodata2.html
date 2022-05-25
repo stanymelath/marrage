@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+
+<title>AgrawalShadi.com</title>
+<meta name="Description" content=" "/>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="canonical" href=" " />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script>
+const form = new FormData();
+form.append("HTML", "biodata2.html");
+
+const settings = {
+"async": true,
+"crossDomain": true,
+"url": "https://cameleonpdf.p.rapidapi.com/html2pdf/.",
+"method": "POST",
+"headers": {
+ "x-rapidapi-key": "3a361e1950msh7beb88b95bcfff6p10d8ddjsn22e829ec0d67",
+ "x-rapidapi-host": "cameleonpdf.p.rapidapi.com"
+},
+"processData": false,
+"contentType": false,
+"mimeType": "multipart/form-data",
+"data": form
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});
+</script>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+function print_webpage()
+{
+ var printContent = document.getElementsByTagName('body')[0];
+ var WinPrint = window.open('', '', 'width=700,height=650');
+ WinPrint.document.write(printContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+}
+function print_div()
+{
+ var printContent = document.getElementById('pdf');
+ var printContent1 = document.getElementById('perImg');
+  var printContent2 = document.getElementById('perImg1');
+ var WinPrint = window.open('', '', 'width=700,height=650');
+ WinPrint.document.write(printContent.innerHTML);
+ WinPrint.document.write(printContent1.innerHTML);
+ WinPrint.document.write(printContent2.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+}
+</script>
+
+
+<style>
+h4 { font-size: 12px; font-weight: 700;    margin-top: 8px;margin-bottom: 5px; }
+h4:after, h5:after { left: 0.5em; margin-right: -50%; }
+h4:after, h5:after { background-color:black ; content: ""; display: inline-block; height: 1px; position: relative; vertical-align: middle; width: 70%; }
+.btn-primary { color: #fff; width: 100%; background-color: teal; border-color: navy; }
+.panel-info>.panel-heading { color: #ffffff; font-weight: 800; background: black; border-color: none; border: none; }
+img[src="null"],img[src=""] { display: none; }
+.bborder {border: 1px solid black;}
+p { margin: 0; }
+h4 span { width: auto; display: inline-block; }
+.panel-info { border: none; }
+.panel-titlez { margin-top: 0; margin-bottom: 0; font-size: 12px; color: inherit; }
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td { padding-top: 0px; padding-bottom: 0px; margin: 0px; }
+strong { font-weight: 700; font-size: 10px; }
+.table>tbody>tr>td { border: none; vertical-align: middle; line-height: 1;word-break:break-word;}
+.panel-body {padding: 0 25px; border: 1px solid;background-image: linear-gradient(#ff8998, #FED2B7);}
+.table_width { width: 560px; padding: 25px; margin: 0em auto; }
+.panel-footer {    padding: 10px 8px;     border: 1px solid #000;   border-top: none; color: #000; font-weight: 800; background-color: #dedede; }
+.bg{background-color: yellow;}
+.print_button{background-color: red; color: white;}
+h5{color:red;}
+@media only screen and (max-width: 960px) {
+
+}
+.table_width { width: 100%; padding: 0px; }
+h4:after { width: 55%; }
+}
+</style>
+
+<script language=" JavaScript" >
+<!--
+function LoadOnce()
+{
+window.location.reload();
+}
+//-->
+</script>
+
+
+
+</head>
+
+<Body onLoad=" LoadOnce()" >
+
+<div class="container">
+
+
+<div class="row">
+  <div class="table_width toppad" >
+    <div id="html-content-holder" >
+      <div class="panel panel-info">
+        <div class="panel-body">
+          <div class="row">
+            <div style="width:70%;float:left;" id="pdf" formtarget="_blank">
+
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td width="100%" colspan="3" style="color:black;">
+                      <h4><span>Personal Profile</span></h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle" id="pdf1"><strong>Name</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle" id="pdf2" class="bg"><strong>DOB & Time</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result2" class="bg"></span> </strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle" id="pdf3"><strong> Birth Place</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result4"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle" id="pdf4"><strong> Height & Weight</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result5"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""   valign="middle"><strong> Complexion</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result6"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""   valign="middle"><strong> Gender</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result24"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height="" valign="middle" class="bg"><strong> Gotra</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result7" class="bg"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle" class="bg"><strong> Manglik</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result8" class="bg"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong> Marital status</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result17"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="3" style="color:black;">
+                      <h4><span>Education/Work Details</span></h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""   valign="middle" class="bg"><strong> Education</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result9" class="bg"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong> Occupation</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result10"></span></strong></td>
+                  </tr>
+                   <tr>
+                    <td width="30%" height=""  valign="middle"><strong> Income</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result_30"></span></strong></td>
+                  </tr>
+                  <tr>
+                   <td width="30%" height=""  valign="middle" class="bg"><strong> Work Place Address</strong></td>
+                   <td width="2%" ><strong>:</strong></td>
+                   <td width="60%"><strong><span id="result30" class="bg"></span></strong></td>
+                 </tr>
+                  <tr>
+                    <td width="100%" colspan="3" style="color:black;">
+                      <h4><span>Family Details
+
+                    </span></h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""style="padding-right: 0px;" valign="middle"><strong>Grand Father name & native place</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result11"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""style="padding-right: 0px;" valign="middle"><strong>Grand Mother name</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result12"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong> Father Name & occupation</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result13"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Father Mobile no</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result14"></span></p></strong> </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height="" valign="middle"><strong> Mother Name & occupation</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result15"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Mother Mobile no</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result16"></span></p></strong> </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>No.of brothers</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result500"></span></p></strong> </td>
+                  </tr>
+
+                    <td width="30%" height=""  valign="middle"><strong> Brothers Name & occupation </strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result28"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Brothers Details</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result29"></span></p></strong> </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>NO.of sisters</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result501"></span></p></strong> </td>
+                  </tr>
+
+                    <td width="30%" height=""  valign="middle"><strong>Sisters Name & occupation</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result301"></span></p></strong> </td>
+                  </tr>
+
+                    <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Sisters Details</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result31"></span></p></strong> </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Nana ji name & native place</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result19"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height="" valign="middle"><strong>Mama ji name </strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result20"></span></strong></td>
+                  </tr>
+
+                     <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Taya ji name </strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result50"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height="" valign="middle"><strong>Chacha ji name</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result51"></span></strong></td>
+                  </tr>
+
+
+                  <tr>
+                    <td width="100%" colspan="3" style="color:black;">
+                      <h4><span>Contact Details</span></h4>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong> Email Id</strong></td>
+                    <td width="2%"><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result23"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Address</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result21"></span></strong></td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="3" style="color:black;">
+                      <h4><span>Requirements</span></h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30%" height=""  valign="middle"><strong>Requirement for bride/groom</strong></td>
+                    <td width="2%" ><strong>:</strong></td>
+                    <td width="60%"><strong><span id="result18"></span></strong></td>
+                  </tr>
+                </tbody>
+              </table>
+		            <div style="text-align: center;">
+
+            <h3 style="font-size: 11px;margin-top:2px;margin-bottom:8px;font-weight:600;color: #ff0057;"></h3>
+              <p style="font-size: 10px;"></p>
+            </div>
+            </div>
+            <div id="pdf" style="width:30%;float:left;padding-right: 5px;margin-top:15px;" >
+
+          <img id="perImg"src="" class="img-responsive bborder"></br>
+			<img  id="perImg1"src="" class="img-responsive bborder"></br>
+
+
+
+
+
+			  </div>
+          </div>
+        </div>
+     <!--   <div class="panel-footer">
+          <div class="panel-titlez">
+            <h3 style="float:left;font-size: 12px;margin: 0;">Anil Kumar Pitti
+              <p style="margin-top:2px;"> Mob No:9212299345,9266672976</p>
+            </h3>
+            <div style="float:right"><img src="emtlogo.png" width="80"></div> </div>
+          <div style="clear:both"></div>
+        </div>-->
+      </div>
+      <!--  <div class="panel-footer">
+						 <input id="btn-Preview-Image" type="button" class="btn" value="Preview">
+                        <span class="pull-right">
+							<a href="#" class="btn btn-primary" id="btn-Convert-Html2Image">Save As Image</a>
+                        </span>
+                    </div>-->
+
+    </div>
+	     <!-- <div class="text-center">
+        <input id="btn-Preview-Image" type="button" class="btn" value="Preview" style="display:none;">
+        <a href="#" class="btn btn-primary" id="btn-Convert-Html2Image">Download PDF</a>
+        <div id="previewImage"style="display:none;"> </div>
+      </div>-->
+  </div>
+</div>
+
+
+
+</div>
+<script>
+var clickMe = document.getElementById('btn-Preview-Image');
+
+clickMe.addEventListener('click', function() {
+  console.log('I was clicked');
+}, true);
+
+setTimeout(function() {
+  var event = new MouseEvent('click'),
+    canceled = !clickMe.dispatchEvent(event);
+
+  if (canceled) {
+    console.log('Click event was canceled');
+  }
+}, 1000);
+</script>
+<script>
+ document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+ document.getElementById("result2").innerHTML=localStorage.getItem("textvalue2");
+ document.getElementById("result4").innerHTML=localStorage.getItem("textvalue4");
+ document.getElementById("result5").innerHTML=localStorage.getItem("textvalue5");
+ document.getElementById("result6").innerHTML=localStorage.getItem("textvalue6");
+ document.getElementById("result24").innerHTML=localStorage.getItem("textvalue24");
+ document.getElementById("result7").innerHTML=localStorage.getItem("textvalue7");
+ document.getElementById("result8").innerHTML=localStorage.getItem("textvalue8");
+ document.getElementById("result17").innerHTML=localStorage.getItem("textvalue17");
+ document.getElementById("result9").innerHTML=localStorage.getItem("textvalue9");
+ document.getElementById("result10").innerHTML=localStorage.getItem("textvalue10");
+ document.getElementById("result11").innerHTML=localStorage.getItem("textvalue11");
+ document.getElementById("result12").innerHTML=localStorage.getItem("textvalue12");
+ document.getElementById("result13").innerHTML=localStorage.getItem("textvalue13");
+ document.getElementById("result14").innerHTML=localStorage.getItem("textvalue14");
+ document.getElementById("result15").innerHTML=localStorage.getItem("textvalue15");
+ document.getElementById("result16").innerHTML=localStorage.getItem("textvalue16");
+ document.getElementById("result500").innerHTML=localStorage.getItem("textvalue16");
+ document.getElementById("result28").innerHTML=localStorage.getItem("textvalue28");
+ document.getElementById("result29").innerHTML=localStorage.getItem("textvalue29");
+ document.getElementById("result501").innerHTML=localStorage.getItem("textvalue16");
+ document.getElementById("result301").innerHTML=localStorage.getItem("textvalue301");
+ document.getElementById("result31").innerHTML=localStorage.getItem("textvalue31");
+ document.getElementById("result19").innerHTML=localStorage.getItem("textvalue19");
+ document.getElementById("result20").innerHTML=localStorage.getItem("textvalue20");
+  document.getElementById("result50").innerHTML=localStorage.getItem("textvalue50");
+   document.getElementById("result51").innerHTML=localStorage.getItem("textvalue51");
+ document.getElementById("result21").innerHTML=localStorage.getItem("textvalue21");
+  document.getElementById("result23").innerHTML=localStorage.getItem("textvalue23");
+  document.getElementById("result18").innerHTML=localStorage.getItem("textvalue18");
+  document.getElementById("result_30").innerHTML=localStorage.getItem("textvalue_30");
+  document.getElementById("result30").innerHTML=localStorage.getItem("textvalue30");
+
+			var dataImage = localStorage.getItem('perImg1');
+		perImg = document.getElementById('perImg');
+
+		if (dataImage) {
+			perImg.src = dataImage; //reads the data as a URL
+		} else {
+			perImg.src= "";
+		}
+
+		document.getElementById('perImg1').src = localStorage.getItem('perImg2');
+
+</script>
+<script>
+$(document).ready(function(){
+
+
+var element = $("#html-content-holder"); // global variable
+var getCanvas; // global variable
+
+   $("#btn-Preview-Image").on('click', function () {
+        html2canvas(element, {
+		allowTaint : true,
+        onrendered: function (canvas) {
+               $("#previewImage").append(canvas);
+               getCanvas = canvas;
+            }
+        });
+   });
+
+$("#btn-Convert-Html2Image").on('click', function () {
+   var imgageData = getCanvas.toDataURL("image/png");
+   // Now browser starts downloading it instead of just showing it
+   var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+   $("#btn-Convert-Html2Image").attr("download", "biodata.png").attr("href", newData);
+});
+
+});
+
+</script>
+<script type="text/javascript">
+       $(document).ready(function () {
+           $('tr').each(function () {
+               $(this).find('td').each(function () {
+                   if ($(this).text().trim() == "") {
+                       $(this).closest("tr").remove();
+                   };
+               });
+           });
+       });
+   </script>
+   <script type="text/javascript">
+   document.querySelector('button').addEventListener('click', function() {
+        html2canvas(document.querySelector('.container'), {
+            onrendered: function(canvas) {
+                // document.body.appendChild(canvas);
+              return Canvas2Image.saveAsPNG(body);
+            }
+        });
+    });
+
+   </script>
+   <script>
+ PDFObject.embed("myfile.pdf", "#pdf");
+ </script>
+
+
+   <center><input type="button" class="print_button" value="Click To Download Form" onclick="print_webpage();">&nbsp;
+   <a href=" https://support.google.com/chrome/answer/7343019?co=GENIE.Platform%3DAndroid&hl=en&oco=0"><input type="button" class="print_button" value="Instructions To Download PDF "></a></center>
+
+    <h5>*Note:Save the filename with your BirthDate,Gotra,Manglik,Education</h5>
+
+   </body>
+  </html>
